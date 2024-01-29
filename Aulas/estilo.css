@@ -77,11 +77,12 @@ th {
     text-decoration: none;
     color: white;
     font-size: 25px;
-    padding: 15px 4px 15px 4px;
-    margin: 30px 80px 30px 80px;
+    padding: 15px;
+    /* margin: 300px; */
     border-radius: 5px;
     transition: all 0.25s;
     opacity: 0.8;
+    margin-bottom: 16px;
 }
 
 .botao_menu:hover {
@@ -132,6 +133,8 @@ th {
     background: url(imagens/imagem_de_fundo.jpg);
     background-position: center;
     position: relative;
+    height: 100vh;
+    object-fit: cover;
 }
 
 .escurecer {
@@ -148,4 +151,10 @@ th {
     padding: 15px;
     align-items: center; /* Centraliza verticalmente */
     justify-content: center; /* Centraliza horizontalmente */
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
 }
