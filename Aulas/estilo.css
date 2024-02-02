@@ -3,31 +3,27 @@ body, html {
     margin: 0;
 }
 
-h1 {
+h1, h2, h3 {
     color: aqua;
     text-align: center;
-    font-size: 65px; /* Tamanho fixo em pixels */
+    margin-bottom: 2%;
+}
+
+h1 {
+    font-size: 65px;
 }
 
 h2 {
-    color: aqua;
-    opacity: 0.95;
     font-size: 55px;
-    text-align: center;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    opacity: 0.95;
 }
 
 h3 {
-    color: aqua;
-    opacity: 0.70;
     font-size: 35px;
-    text-align: center;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    opacity: 0.70;
 }
 
-p, article {
+p, article, abbr {
     word-spacing: 2px;
     color: white;
     font-size: 20px;
@@ -37,15 +33,11 @@ p, article {
     margin-bottom: 2%;
 }
 
-abbr {
-    font-size: 15px;
-}
-
 table {
     text-align: center;
     border-collapse: collapse;
     width: 94%;
-    margin: auto; /* Adicione esta linha para centralizar a tabela */
+    margin: auto;
     border: 2px solid #555;
 }
 
@@ -61,7 +53,7 @@ th {
     color: white;
 }
 
-.p{
+.p {
     color: white;
     font-size: 25px;
 }
@@ -70,19 +62,28 @@ th {
     text-align: center;
 }
 
+.menu {
+    display: flex;
+    flex-wrap: wrap; /* Adicionado para permitir que os itens quebrem para a próxima linha */
+    justify-content: center; /* Adicionado para centralizar horizontalmente */
+    gap: 16px; /* Espaçamento entre os itens */
+}
+
 .botao_menu {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #2cb52f;
     text-align: center;
     text-decoration: none;
     color: white;
     font-size: 25px;
     padding: 15px;
-    /* margin: 300px; */
     border-radius: 5px;
     transition: all 0.25s;
     opacity: 0.8;
     margin-bottom: 16px;
+    flex: 0 0 calc(20% - 32px); /* Distribui os itens em 5 colunas, considerando o espaçamento */
 }
 
 .botao_menu:hover {
@@ -93,32 +94,31 @@ th {
     padding: 8px 30px;
 }
 
-.code {
+.code, .code_2 {
     word-spacing: 2px;
     font-size: 15px;
-    color: aqua;
     margin: 0;
     padding: 0;
+}
+
+.code {
+    color: aqua;
     opacity: 0.65;
 }
 
 .code_2 {
-    word-spacing: 1px;
-    font-size: 15px;
     color: #2cb52f;
-    margin: 0;
-    padding: 0;
 }
 
 .tabela {
     display: flex;
     flex-direction: column;
-    height: 50vh; /* 50% da altura da viewport */
+    height: 50vh;
 }
 
 .linha {
     display: flex;
-    height: 100%; /* 100% da altura da .tabela */
+    height: 100%;
 }
 
 .coluna {
@@ -132,29 +132,24 @@ th {
 .imagem_de_fundo {
     background: url(imagens/imagem_de_fundo.jpg);
     background-position: center;
+    background-attachment: fixed; /* Fixa a imagem de fundo */
     position: relative;
-    height: 100vh;
-    object-fit: cover;
 }
 
-.escurecer {
+.escurecer, .centralizar {
     background-color: rgba(0, 0, 0, 0.9);
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-}
-
-.centralizar {
     word-spacing: 2px;
     color: white;
     padding: 15px;
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;
+    justify-content: center;
 }
 
-.menu {
-    display: flex;
+.centralizar {
+    align-items: center;
     justify-content: center;
-    gap: 32px;
 }
