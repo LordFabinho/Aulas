@@ -63,6 +63,14 @@ th {
     text-align: center;
 }
 
+.espacamento{
+    margin: 3%;
+    opacity: 0.86;
+    word-spacing: 2px;
+    color: white;
+    font-size: 20px;
+}
+
 .menu {
     display: flex;
     flex-wrap: wrap; /* Adicionado para permitir que os itens quebrem para a próxima linha */
@@ -93,6 +101,11 @@ th {
     background-color: #2cb52f;
     opacity: 1;
     padding: 8px 30px;
+}
+
+.alinhar_com_paragrafo{
+    margin: 2%;
+    align-items: center;
 }
 
 .code, .code_2 {
