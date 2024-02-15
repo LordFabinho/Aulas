@@ -217,3 +217,8 @@ th {
 .alternativas {
     display: flex;
 }
+
+.id_index {
+    background: url(imagens/imagem_de_fundo.jpg);
+    background-size: 100% 100%; /* Cobrir completamente a largura e altura */
+}
