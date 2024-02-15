@@ -23,7 +23,7 @@ h3 {
     opacity: 0.70;
 }
 
-p, article, abbr{
+p, article, abbr {
     opacity: 0.86;
     word-spacing: 2px;
     color: white;
@@ -71,11 +71,32 @@ th {
     font-size: 20px;
 }
 
+.alternativa {
+    flex-grow: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2cb52f;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.alternativa:hover {
+    background-color: #1e7b2d;
+}
+
 .menu {
     display: flex;
-    flex-wrap: wrap; /* Adicionado para permitir que os itens quebrem para a próxima linha */
-    justify-content: center; /* Adicionado para centralizar horizontalmente */
-    gap: 16px; /* Espaçamento entre os itens */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
 }
 
 .botao_menu {
@@ -92,7 +113,7 @@ th {
     transition: all 0.25s;
     opacity: 0.8;
     margin-bottom: 16px;
-    flex: 0 0 calc(20% - 32px); /* Distribui os itens em 5 colunas, considerando o espaçamento */
+    flex: 0 0 calc(20% - 32px);
 }
 
 .botao_menu:hover {
@@ -103,7 +124,7 @@ th {
     padding: 8px 30px;
 }
 
-.alinhar_com_paragrafo{
+.alinhar_com_paragrafo {
     margin: 2%;
     align-items: center;
 }
@@ -146,7 +167,7 @@ th {
 .imagem_de_fundo {
     background: url(imagens/imagem_de_fundo.jpg);
     background-position: center;
-    background-attachment: fixed; /* Fixa a imagem de fundo */
+    background-attachment: fixed;
     position: relative;
 }
 
@@ -163,4 +184,36 @@ th {
 .centralizar {
     align-items: center;
     justify-content: center;
+}
+
+.questao {
+    align-items: center;
+    display: block;
+    margin: 2% 10% 2% 10%;
+}
+
+.alternativa {
+    flex-grow: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2cb52f;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    margin: 2%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 20%; /* Adicionando esta propriedade */
+}
+
+.alternativa:hover {
+    background-color: #1e7b2d;
+}
+
+.alternativas {
+    display: flex;
 }
