@@ -31,23 +31,26 @@ h3 {
 p, article, abbr {
     word-spacing: 2px;
     font-size: 18px;
-    margin: 2%;
+    margin: auto;
     color: white;
     opacity: 0.86;
+    max-width: 1170px;
 }
 
 /* Estilos para tabelas */
 table {
     text-align: center;
     border-collapse: collapse;
-    width: 94%;
+    max-width: 1170px;
     margin: auto;
+
 }
 
 th, td {
     border: 1px solid #555;
     padding: 8px;
     background-color: #ddd;
+    color: #000;
 }
 
 th {
@@ -130,6 +133,9 @@ th {
     align-items: center;
 }
 
+img{
+    margin: auto;
+}
 /* Estilos para códigos */
 .code, .code_2 {
     word-spacing: 2px;
@@ -184,6 +190,8 @@ th {
     padding: 1%;
 }
 
+
+
 /* Estilos para centralizar */
 .centralizar {
     align-items: center;
@@ -230,6 +238,8 @@ canvas {
     flex-wrap: wrap;
     justify-content: center;
     gap: 16px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .book {
