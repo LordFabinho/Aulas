@@ -1,14 +1,9 @@
-/* Reset CSS */
-body, html {
-    height: 100%;
-    margin: 0;
-}
-
 /* Estilos para cabeçalhos */
 header {
     background-color: hsla(358, 81%, 50%, 0.822);
     height: 60px;
     display: flex; 
+    justify-content: space-between; /* Adiciona espaço entre os elementos */
 }
 
 .logo {
@@ -21,13 +16,35 @@ header {
     position: absolute;
     top: 15px;
     right: 10px;
-    background: none; /* Remove o fundo */
-    border: none; /* Remove a borda */
+    background: none; /* Remove the background */
+    border: none; /* Remove the border */
 }
 
-.botao_navegacao:hover{
+.botao_navegacao:hover {
     cursor: pointer;
-    border: none;
+}
+
+.botao_navegacao:hover .divisao_menu{
+    top: 25px;
+    position: absolute;
+    right: 0px;
+    display: block;
+    text-align: left;
+    height: 10vh;
+    width: 30vh;
+    background-color: #1e7b2d;
+}
+
+.divisao_menu{
+    display: none;
+}
+
+.redirecionador {
+    display: block;
+    background-color: #000;
+    font-size: 4vh;
+    margin: 3px;
+    object-fit: contain;
 }
 
 .barra {
@@ -37,6 +54,34 @@ header {
     background-color:rgba(0, 0, 0, 0.8);
     margin-top: 2px;
     border-radius: 3px;
+}
+
+
+
+.redirecionado{
+    display: none;
+}
+
+/* Estilos para a barra lateral */
+.menu_lateral {
+    display: none; /* Oculta a barra lateral por padrão */
+    position: absolute;
+    top: 60px; /* Posiciona a barra lateral abaixo do cabeçalho */
+    left: 0; /* Posiciona a barra lateral à esquerda */
+    width: 200px; /* Define a largura da barra lateral */
+    background-color: #000; /* Define a cor de fundo da barra lateral */
+    padding: 20px; /* Adiciona espaço interno à barra lateral */
+}
+
+.menu_lateral a {
+    display: block; /* Exibe os links como blocos */
+    color: #fff; /* Define a cor do texto dos links */
+    text-decoration: none; /* Remove a sublinhagem dos links */
+    margin-bottom: 10px; /* Adiciona espaço entre os links */
+}
+
+.menu_lateral a:hover {
+    color: #ccc; /* Define a cor do texto do link quando o mouse está sobre ele */
 }
 
 /* Estilos para títulos */
