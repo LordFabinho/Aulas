@@ -5,11 +5,54 @@ body, html {
 }
 
 /* Estilos para cabeçalhos */
-header{
+header {
     background-color: #d3b0b0;
-    height: 6%;
-    margin: 0px;
+    height: 60px;
+    display: flex; 
 }
+
+.centralizar_cabecalho{
+    align-items: center;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+.delimitar_largura {
+    background-color: #1e7b2d;
+    object-fit: contain;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+}
+
+.logo_texto_wrapper {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.logo {
+    width: 50px;
+    margin-right: 110vh;
+}
+
+.bloco_texto {
+    font-size: 20px;
+    margin-left: 10px; /* Ajuste conforme necessário */
+}
+
+.navegacao {
+    margin-right: 0px;
+    display: inline-block;
+    margin-top: 16px;
+}
+
+.botoes_navegacao {
+    display: inline;
+    font-size: 25px;
+    margin: 10px;
+}
+
 
 /* Estilos para títulos */
 h1, h2, h3 {
