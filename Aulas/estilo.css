@@ -4,6 +4,13 @@ body, html {
     margin: 0;
 }
 
+/* Estilos para cabeçalhos */
+header{
+    background-color: #d3b0b0;
+    height: 6%;
+    margin: 0px;
+}
+
 /* Estilos para títulos */
 h1, h2, h3 {
     text-align: center;
@@ -190,8 +197,6 @@ img{
     padding: 1%;
 }
 
-
-
 /* Estilos para centralizar */
 .centralizar {
     align-items: center;
@@ -201,7 +206,7 @@ img{
 /* Estilos para centralizar imagem */
 .centralizar_imagem {
     display: block;
-    margin: 4% 2%;
+    margin: auto;
     max-width: 500px;
     object-fit: contain;
 }
