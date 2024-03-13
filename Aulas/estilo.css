@@ -364,6 +364,43 @@ a {
     font-weight: bolder;
     text-decoration: none;
 }
+p, article, abbr {
+    object-fit: contain;
+    word-spacing: 1px;
+    font-size: 18px;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    color: white;
+    opacity: 0.86;
+    max-width: 1170px;
+}
+
+/* Estilos para tabelas */
+table {
+    align-items: center;
+    margin: auto;
+    display: block; /* Converte a tabela em um bloco */
+    border-collapse: collapse; /* Combina as bordas das células da tabela */
+}
+
+#tabela_classes_numericas{
+    transform-origin:  left  center ;
+    align-items: left;
+    max-height: 30vh;
+    display: block;
+}
+
+th, td {
+    border: 1px solid #555;
+    padding: 2px;
+    background-color: #ddd;
+    color: #000;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
 
 
 @media only screen and (max-width: 800px){
