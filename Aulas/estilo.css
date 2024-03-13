@@ -48,15 +48,13 @@ header {
 }
 
 .barra {
-    display: block;
+    display: none;
     height: 7px;
     width: 50px;
     background-color:rgba(0, 0, 0, 0.8);
     margin-top: 2px;
     border-radius: 3px;
 }
-
-
 
 .redirecionado{
     display: none;
@@ -107,42 +105,6 @@ h3 {
     color: aqua;
 }
 
-/* Estilos para parágrafos, artigos e abreviações */
-p, article, abbr {
-    word-spacing: 2px;
-    font-size: 18px;
-    margin: auto;
-    color: white;
-    opacity: 0.86;
-    max-width: 1170px;
-}
-
-/* Estilos para tabelas */
-table {
-    text-align: center;
-    border-collapse: collapse;
-    max-width: 1170px;
-    margin: auto;
-
-}
-
-th, td {
-    border: 1px solid #555;
-    padding: 8px;
-    background-color: #ddd;
-    color: #000;
-}
-
-th {
-    background-color: #333;
-    color: white;
-}
-
-/* Estilos para elementos de classe "p" */
-.p {
-    font-size: 25px;
-    color: white;
-}
 
 /* Estilos para espaçamento */
 .espacamento {
@@ -401,4 +363,92 @@ a {
     font-size: 20px;
     font-weight: bolder;
     text-decoration: none;
+}
+
+
+@media only screen and (max-width: 800px){
+    
+
+/* Estilos para títulos */
+    h1, h2, h3 {
+        margin: 3vh auto 3vh auto;
+    }
+
+    h1 {
+        display: block;
+        text-align: center;
+        color: aqua;
+        font-size: 6vw;
+        margin-left: 0;
+
+    }
+
+    h2 {
+        display: block;
+        text-align: center;
+        color: aqua;
+        opacity: 0.95;
+        font-size: 5vw;
+    }
+
+    h3 {
+        display: block;
+        text-align: center;
+        color: aqua;
+        font-size: 5vw;
+        margin-left: 0;
+
+    }
+
+    /* Estilos para parágrafos, artigos e abreviações */
+    
+    p, article, abbr {
+        object-fit: contain;
+        word-spacing: 1px;
+        font-size: 18px;
+        margin-left: 1vh;
+        margin-right: 1vh;
+        color: white;
+        opacity: 0.86;
+        max-width: 1170px;
+    }
+
+    /* Estilos para tabelas */
+    table {
+        align-items: center;
+        margin: auto;
+        display: block; /* Converte a tabela em um bloco */
+        border-collapse: collapse; /* Combina as bordas das células da tabela */
+    }
+
+    #tabela_classes_numericas{
+        transform-origin:  left  center ;
+        transform: scale(0.54) ;        
+        align-items: left;
+        max-height: 30vh;
+        display: block;
+    }
+
+    th, td {
+        border: 1px solid #555;
+        padding: 2px;
+        background-color: #ddd;
+        color: #000;
+    }
+
+    th {
+        background-color: #333;
+        color: white;
+    }
+
+    /* Estilos para elementos de classe "p" */
+    .p {
+        font-size: 10px;
+        color: white;
+    }
+
+    img{
+        object-fit: contain;
+        max-height: 30vh;
+    }
 }
