@@ -4,6 +4,7 @@ header {
     height: 60px;
     display: flex; 
     justify-content: space-between; /* Adiciona espaço entre os elementos */
+    position: relative; /* Adiciona posição relativa */
 }
 
 .logo {
@@ -13,54 +14,20 @@ header {
 }
 
 .botao_navegacao {
-    position: absolute;
-    top: 15px;
-    right: 10px;
     background: none; /* Remove the background */
     border: none; /* Remove the border */
+    cursor: pointer; /* Alterado para o botão ter cursor de ponteiro sempre */
 }
 
-.botao_navegacao:hover {
-    cursor: pointer;
-}
-
-.botao_navegacao:hover .divisao_menu{
-    top: 25px;
-    position: absolute;
-    right: 0px;
+.botao_navegacao .barra {
     display: block;
-    text-align: left;
-    height: 10vh;
-    width: 30vh;
-    background-color: #1e7b2d;
-}
-
-.divisao_menu{
-    display: none;
-}
-
-.redirecionador {
-    display: block;
-    background-color: #000;
-    font-size: 4vh;
-    margin: 3px;
-    object-fit: contain;
-}
-
-.barra {
-    display: none;
     height: 7px;
     width: 50px;
-    background-color:rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     margin-top: 2px;
     border-radius: 3px;
 }
 
-.redirecionado{
-    display: none;
-}
-
-/* Estilos para a barra lateral */
 .menu_lateral {
     display: none; /* Oculta a barra lateral por padrão */
     position: absolute;
@@ -69,10 +36,15 @@ header {
     width: 200px; /* Define a largura da barra lateral */
     background-color: #000; /* Define a cor de fundo da barra lateral */
     padding: 20px; /* Adiciona espaço interno à barra lateral */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.botao_navegacao:hover + .menu_lateral {
+    display: block; /* Exibe os links como blocos quando o botão é hover */
 }
 
 .menu_lateral a {
-    display: block; /* Exibe os links como blocos */
+    display: block; /* Faz os links ocuparem o espaço total da barra lateral */
     color: #fff; /* Define a cor do texto dos links */
     text-decoration: none; /* Remove a sublinhagem dos links */
     margin-bottom: 10px; /* Adiciona espaço entre os links */
@@ -91,6 +63,10 @@ h1, h2, h3 {
 h1 {
     font-size: 65px;
     color: aqua;
+}
+
+#titulo_index{
+    font-size: 5vh;
 }
 
 h2 {
