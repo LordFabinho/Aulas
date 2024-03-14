@@ -14,44 +14,50 @@ header {
 }
 
 .botao_navegacao {
+    width: 60px;
+    height: 60px;
     background: none; /* Remove the background */
     border: none; /* Remove the border */
     cursor: pointer; /* Alterado para o botão ter cursor de ponteiro sempre */
 }
 
-.botao_navegacao .barra {
+.barra {
     display: block;
-    height: 7px;
+    height: 8px;
     width: 50px;
     background-color: rgba(0, 0, 0, 0.8);
-    margin-top: 2px;
-    border-radius: 3px;
+    margin: 4px auto 4px auto;
 }
 
 .menu_lateral {
     display: none; /* Oculta a barra lateral por padrão */
     position: absolute;
     top: 60px; /* Posiciona a barra lateral abaixo do cabeçalho */
-    left: 0; /* Posiciona a barra lateral à esquerda */
+    right: 0; /* Posiciona a barra lateral à esquerda */
     width: 200px; /* Define a largura da barra lateral */
-    background-color: #000; /* Define a cor de fundo da barra lateral */
+    background-color: #fff; /* Define a cor de fundo da barra lateral */
     padding: 20px; /* Adiciona espaço interno à barra lateral */
     text-align: left; /* Alinha o texto à esquerda */
 }
 
-.botao_navegacao:hover + .menu_lateral {
+.botao_navegacao:hover .menu_lateral {
     display: block; /* Exibe os links como blocos quando o botão é hover */
 }
 
-.menu_lateral a {
+.botao_navegacao:hover .menu_lateral {
     display: block; /* Faz os links ocuparem o espaço total da barra lateral */
     color: #fff; /* Define a cor do texto dos links */
     text-decoration: none; /* Remove a sublinhagem dos links */
     margin-bottom: 10px; /* Adiciona espaço entre os links */
 }
 
-.menu_lateral a:hover {
-    color: #ccc; /* Define a cor do texto do link quando o mouse está sobre ele */
+.botao_navegacao:hover .botao_redirecionador{
+    display: block;
+}
+
+.botao_redirecionador{
+    display: none;
+    color:#2cb52f;
 }
 
 /* Estilos para títulos */
