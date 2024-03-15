@@ -1,4 +1,9 @@
+/* Importando fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
 /* Estilos para cabeçalhos */
+
 header {
     background-color: hsla(358, 81%, 50%, 0.822);
     height: 60px;
@@ -13,7 +18,14 @@ header {
     margin: 0;
 }
 
+.logo:hover{
+    scale: 1.1;
+    margin-left: 5px
+}
+
 .botao_navegacao {
+    display: block;
+    position: relative;
     width: 60px;
     height: 60px;
     background: none; /* Remove the background */
@@ -29,35 +41,65 @@ header {
     margin: 4px auto 4px auto;
 }
 
+.botao_navegacao:hover .menu_lateral{
+    display: block;
+}
+
 .menu_lateral {
+    height: auto;
     display: none; /* Oculta a barra lateral por padrão */
     position: absolute;
     top: 60px; /* Posiciona a barra lateral abaixo do cabeçalho */
     right: 0; /* Posiciona a barra lateral à esquerda */
-    width: 200px; /* Define a largura da barra lateral */
-    background-color: #fff; /* Define a cor de fundo da barra lateral */
-    padding: 20px; /* Adiciona espaço interno à barra lateral */
+    width: 25vw; /* Define a largura da barra lateral */
+    background-color: #000000cd; /* Define a cor de fundo da barra lateral */
+    padding: 0px; /* Adiciona espaço interno à barra lateral */
     text-align: left; /* Alinha o texto à esquerda */
+    box-sizing: border-box;
 }
 
-.botao_navegacao:hover .menu_lateral {
-    display: block; /* Exibe os links como blocos quando o botão é hover */
-}
-
-.botao_navegacao:hover .menu_lateral {
-    display: block; /* Faz os links ocuparem o espaço total da barra lateral */
-    color: #fff; /* Define a cor do texto dos links */
-    text-decoration: none; /* Remove a sublinhagem dos links */
-    margin-bottom: 10px; /* Adiciona espaço entre os links */
-}
-
-.botao_navegacao:hover .botao_redirecionador{
+.botao_navegacao:hover .caixa_botao{
     display: block;
 }
 
-.botao_redirecionador{
-    display: none;
-    color:#2cb52f;
+.botao_redirecionador {
+    text-decoration: none;
+    align-items: center;
+    margin: 10px;
+    color: #3febee;
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 550; /* Peso da fonte */
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "slnt" 3; /* Configuração de variação da fonte */
+}
+
+
+.botao_redirecionador:hover .caixa_botao{
+    margin: 100px;
+}
+
+.caixa_botao {
+    margin: 10px 0 10px 0;
+    opacity: 0.7; /* Inicialmente transparente */
+    transition: opacity 0.1s; /* Adiciona uma transição suave */
+    transition: background-color 0.5s ease; /* Transição suave de 0.3 segundos na cor de fundo */
+}
+
+.caixa_botao:hover {
+    opacity: 1; /* Torna completamente visível ao passar o mouse */
+    box-shadow: 0px 10px 10px 0px rgba(255, 251, 251, 0.1);
+    object-fit: contain;
+    height: auto;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.705);
+    align-items: left;
+    box-sizing: border-box; /* Garante que o preenchimento não aumente a largura do botão */
+}
+
+.caixa_botao:hover .botao_redirecionador{
+    color:  hsla(358, 81%, 50%, 0.822);
 }
 
 /* Estilos para títulos */
