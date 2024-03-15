@@ -37,7 +37,7 @@ header {
     display: block;
     height: 8px;
     width: 50px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgb(0, 0, 0);
     margin: 4px auto 4px auto;
 }
 
@@ -46,6 +46,7 @@ header {
 }
 
 .menu_lateral {
+    margin: 0;
     height: auto;
     display: none; /* Oculta a barra lateral por padrão */
     position: absolute;
@@ -56,6 +57,16 @@ header {
     padding: 0px; /* Adiciona espaço interno à barra lateral */
     text-align: left; /* Alinha o texto à esquerda */
     box-sizing: border-box;
+}
+
+.barra_vertical {
+    display: none;
+    position: absolute;
+    width: 8px;
+    height: 36px; /* Defina a altura conforme necessário */
+    background-color: hsl(358, 81%, 50%);
+    transition: background-color 0.6s;
+    margin: 0px 0px 0 1px;
 }
 
 .botao_navegacao:hover .caixa_botao{
@@ -81,10 +92,15 @@ header {
 }
 
 .caixa_botao {
-    margin: 10px 0 10px 0;
+    border: #000 6px;
+    margin: 5px 0 1px 0;
     opacity: 0.7; /* Inicialmente transparente */
     transition: opacity 0.1s; /* Adiciona uma transição suave */
     transition: background-color 0.5s ease; /* Transição suave de 0.3 segundos na cor de fundo */
+}
+
+.caixa_botao:hover .barra_vertical{
+    display: block;
 }
 
 .caixa_botao:hover {
@@ -99,7 +115,7 @@ header {
 }
 
 .caixa_botao:hover .botao_redirecionador{
-    color:  hsla(358, 81%, 50%, 0.822);
+    color:  hsla(358, 81%, 50%, 0.952);
 }
 
 /* Estilos para títulos */
@@ -382,13 +398,13 @@ canvas {
     font-weight: bolder;
 }
 
-
 a {
     font-size: 20px;
     font-weight: bolder;
     text-decoration: none;
 }
-p, article, abbr {
+
+article, abbr {
     object-fit: contain;
     word-spacing: 1px;
     font-size: 18px;
@@ -397,6 +413,16 @@ p, article, abbr {
     color: white;
     opacity: 0.86;
     max-width: 1170px;
+}
+
+p{
+    margin: auto;
+    align-items: center;
+    object-fit: contain;
+    max-width: 1170px;
+    text-align: center;
+    color: white;
+    opacity: 0.86;
 }
 
 /* Estilos para tabelas */
@@ -430,7 +456,22 @@ th {
 @media only screen and (max-width: 800px){
     
 
-/* Estilos para títulos */
+    /* Estilos para cabeçalhos */
+   
+    .menu_lateral {
+        width: 50vw; /* Define a largura da barra lateral */
+    }
+
+    .botao_navegacao:hover .caixa_botao{
+        display: block;
+    }
+
+    .botao_redirecionador {
+        font-size: 25px;
+    }
+
+    /* Estilos para títulos */
+
     h1, h2, h3 {
         margin: 3vh auto 3vh auto;
     }
@@ -441,7 +482,6 @@ th {
         color: aqua;
         font-size: 6vw;
         margin-left: 0;
-
     }
 
     h2 {
