@@ -83,13 +83,11 @@ Classifique a questão fornecida com base nesses critérios.
 Questao = ""
 
 
-# response = model.generate_content([prompt, Questao])
-# print(response.text)
 
 url = "https://api.enem.dev/v1/exams/2020/questions/136"
 
 response = requests.get(url).json()
-print(response)
+# print(response)
 
 def Imagem_Em_Bytes(Lista_Links_Imagens):
     """Retorna lista das imagens"""
@@ -100,11 +98,18 @@ def Imagem_Em_Bytes(Lista_Links_Imagens):
         Lista_Imagens.append(imagem)
     return Lista_Imagens
 
-print(Imagem_Em_Bytes(response["files"]))
+# print(Imagem_Em_Bytes(response["files"]))
 
-print(response["files"])
-print(response["context"])
-print(response["alternativesIntroduction"])
+Questao = f"Questão: ({response['context']}), Pergunta: {response['alternativesIntroduction']}"
+
+response = model.generate_content([prompt, Questao])
+print(response.text)
+
+
+
+# print(response["files"])
+# print(response["context"])
+# print(response["alternativesIntroduction"])
 
 
 def separar_informações(arq_Json):
