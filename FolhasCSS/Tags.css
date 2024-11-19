@@ -1,0 +1,137 @@
+/* Estilizações para tags */
+
+body{
+    background-color: rgba(0, 0, 0, 0.155);
+    /* Branco  para tags */
+}
+
+header {
+    background-color: hsla(358, 81%, 50%, 0.822);
+    height: 60px;
+    display: flex; 
+    justify-content: space-between;
+    position: relative;
+}
+
+main {
+    all: unset;
+    margin: auto;
+    display: block; 
+    max-width: 1000px;
+    text-align: left; /* Alinha textos e conteúdo inline à direita */
+}
+
+
+h1, h2, h3{
+    all: unset;
+}
+
+h1 {
+    font-size: 65px;
+    color: aqua;
+}
+
+h2 {
+    font-size: 55px;
+    opacity: 0.95;
+    color: aqua;
+}
+
+h3 {
+    font-size: 35px;
+    opacity: 0.70;
+    color: aqua;
+}
+
+p {
+    font-size: 20px;
+    color: white;
+    opacity: 0.86;
+}
+
+img {
+    margin: auto;
+}
+
+table {
+    align-items: center;
+    margin: auto;
+    display: block; /* Converte a tabela em um bloco */
+    border-collapse: collapse; /* Combina as bordas das células da tabela */
+}
+
+th, td {
+    border: 1px solid #555;
+    padding: 2px;
+    background-color: #ddd;
+    color: #000;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+abbr {
+    object-fit: contain;
+    word-spacing: 1px;
+    font-size: 18px;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    color: white;
+    opacity: 0.86;
+    max-width: 1170px;
+}
+
+article {
+    object-fit: contain;
+    word-spacing: 1px;
+    font-size: 18px;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    color: white;
+    opacity: 0.86;
+    max-width: 1170px;
+}
+
+canvas {
+    border: 1px solid black;
+}
+
+a {
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+code {
+    word-spacing: 2px;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    color: aqua;
+    opacity: 0.65;
+}
+
+@media screen and (max-width: 480px) {
+    img {
+        transform: scale(0.5);
+        object-fit: contain;
+    }
+
+    h1, h2, h3 {
+        margin: 3vh auto 3vh auto;
+    }
+
+    h1 {
+        font-size: 6vw;
+    }
+
+    h2 {
+        font-size: 5vw;
+    }
+
+    h3 {
+        font-size: 5vw;
+    }
+}
