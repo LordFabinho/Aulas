@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conjuntos Numéricos</title>
     <link rel="shortcut icon" href="../imagens/logoDR_4.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../estilo.css">
+    <link rel="stylesheet" href="../FolhasCSS/Classes.css">
+    <link rel="stylesheet" href="../FolhasCSS/Tags.css">
+    <link rel="stylesheet" href="../FolhasCSS/Animacoes.css">
+    <link rel="stylesheet" href="../FolhasCSS/Ids.css">
     <script async src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <style>
@@ -14,67 +17,60 @@
             padding: 0;
             box-sizing: border-box;
         }
+
         .ContainerCard {
-            display: block;
-            margin: auto;
-            height: 50vh;
-            width: 65vh;
-            background-color: rgba(255, 255, 255, 0.829);
-            border: 2px solid hsla(358, 81%, 50%, 0.822); /* Borda de 10px listrada */
-        }
-        .ContainerCard:hover{
-            border: 2px dashed hsla(358, 81%, 50%, 0.822);
-        }
-        .ContainerInfo {
-            margin: auto;
             display: flex;
             justify-content: center;
-            flex-direction: row;
             align-items: center;
-            gap: 10px;
-            height: 50%;
-            width:  80%;
+            margin: auto;
+            width: 80vh;
+            height: 80vh;
             background-color: rgba(255, 255, 255, 0.829);
-            border: 2px solid hsla(358, 81%, 50%, 0.822); /* Borda de 10px listrada */
+            text-align: center; /* Centraliza o texto dentro da div */
         }
-        .ColunsInfo {
-            
-            height: 30%;
-            width:  30%;
-            background-color:blueviolet;
+
+        .ContainerInfo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 700px;
+            width: 700px;
+            background-color: rgba(255, 255, 255, 0.829);
         }
-        
+
         p {
-            all: unset;
-            display: block; /* Restaura o comportamento de bloco padrão da tag <p> */
-            font-family: inherit; /* Herda a fonte do elemento pai */
-            font-size: inherit; /* Herda o tamanho da fonte */
             color: red;
+        }
+        a {
+            text-decoration: none; /* Remove o sublinhado */
+            color: inherit; /* Herda a cor do elemento pai */
+            background-color: red; /* Remove qualquer cor de fundo */
+            border: none; /* Remove bordas, se houver */
+            outline: none; /* Remove o contorno ao focar (não recomendado para acessibilidade, mas pode ser adicionado conforme necessário) */
+            font-size: 20px; /* Herda o tamanho da fonte do elemento pai */
+            line-height: 150%; /* Herda o espaçamento entre as linhas */
+            text-align: center; /* Herda o alinhamento do texto */
+            cursor: pointer; /* Alterar o cursor ao passar o mouse sobre o link */
+            padding: 10px;
+            margin: 10px;
+            width: 95%;
         }
     </style>
 </head>
-<body class="imagem_de_fundo">
-    <div class="escurecer">
-        
-        <div class="ContainerCard">
-            <div class="ContainerInfo">
-                <div class="ColunsInfo">
-                    <p>Autor: Fábio Filho</p>
-                    <p>18 de Novembro de 2024</p>
-                </div>
-                
-                <div class="ColunsInfo">
-                    <p>Instagram: @FabinhoFarias</p>
-                    <p>GitHub: @FabinhoFarias</p>
-                </div>
-                
-                <div class="ColunsInfo">
-                    <p>Área: Matemática</p>
-                    <p>SubÁrea: Matemática Básica</p>
-                </div>
-            </div>
+<body>
+    <div class="ContainerCard">
+        <div class="ContainerInfo">
+            <h1>TemaTemaTema</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Possimus explicabo quisquam deleniti blanditiis est debitis 
+                nemo quae porro eum minima qui aut consectetur cumque, dolorem 
+                optio, at minus nihil laudantium!</p>
+            <a href="">Botao</a>
+            <a href="">Botao</a>
+            <a href="">Botao</a>
+            <a href="">Botao</a>
         </div>
-        
     </div>
 </body>
 </html>
