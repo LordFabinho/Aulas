@@ -1,8 +1,8 @@
 /* Estilizações para tags */
 
-body{
-    background-color: rgba(0, 0, 0, 0.155);
-    /* Branco  para tags */
+body {
+    background-color: rgba(0, 0, 0, 0.863);
+    /*Grafite: rgba(0, 0, 0, 0.155)*/
 }
 
 header {
@@ -14,13 +14,18 @@ header {
 }
 
 main {
-    all: unset;
     margin: auto;
     display: block; 
-    max-width: 1000px;
+    max-width: 933px; /* Mexer quando os novos cards estiverem prontos */
     text-align: left; /* Alinha textos e conteúdo inline à direita */
 }
 
+footer {
+    margin: auto;
+    display: block; 
+    max-width: 933px; /* Mexer quando os novos cards estiverem prontos */
+    text-align: left; /* Alinha textos e conteúdo inline à direita */
+}
 
 h1, h2, h3{
     all: unset;
@@ -44,32 +49,45 @@ h3 {
 }
 
 p {
-    font-size: 20px;
+    line-height: 150%;
+    font-size: 21px;
+    color: white;
+    opacity: 0.86;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+strong{
+    color: white;
+}
+
+li{
+    margin-left: 20px;
+    font-size: 21px;
     color: white;
     opacity: 0.86;
 }
 
-img {
-    margin: auto;
-}
-
 table {
+    width: 100%;
     align-items: center;
-    margin: auto;
-    display: block; /* Converte a tabela em um bloco */
     border-collapse: collapse; /* Combina as bordas das células da tabela */
 }
 
 th, td {
-    border: 1px solid #555;
-    padding: 2px;
+    border: 1px solid #ffffffa9;
+    padding: 7px;
     background-color: #ddd;
     color: #000;
 }
 
 th {
     background-color: #333;
-    color: white;
+    color: rgba(255, 255, 255, 0.824);
+}
+
+img{
+    width: 100%;
 }
 
 abbr {
@@ -100,8 +118,8 @@ canvas {
 
 a {
     font-size: 20px;
-    font-weight: bolder;
     text-decoration: none;
+    color: white;
 }
 
 code {
@@ -116,7 +134,6 @@ code {
 @media screen and (max-width: 480px) {
     img {
         transform: scale(0.5);
-        object-fit: contain;
     }
 
     h1, h2, h3 {
