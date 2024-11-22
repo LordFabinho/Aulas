@@ -128,21 +128,23 @@
     background-color: rgba(255, 255, 255, 0);
 }
 
-.ParagrafoCardPaginaInicial {
-    margin: 7px auto;
-    width: 95%;
-}
-
 .TituloCardPaginaInicial{
+    color: red;
     font-size: 50px;
     margin: 5px auto;
+}
+
+.ParagrafoCardPaginaInicial {
+    color: #f3f3f3;
+    margin: 7px auto;
+    width: 95%;
 }
 
 .BotaoCardPaginaInicial {
     all: unset;
     text-decoration: none; /* Remove o sublinhado */
     color: white; /* Herda a cor do elemento pai */
-    background-color: red; /* Remove qualquer cor de fundo */
+    background-color: hsla(358, 81%, 50%, 0.826); /* Remove qualquer cor de fundo */
     border: none; /* Remove bordas, se houver */
     outline: none; /* Remove o contorno ao focar (não recomendado para acessibilidade, mas pode ser adicionado conforme necessário) */
     font-size: 20px; /* Herda o tamanho da fonte do elemento pai */
@@ -372,4 +374,38 @@
     left: 40px;
     right: 6px;
     font-weight: bolder;
+}
+
+@media screen and (max-width: 500px) {
+    /* Tags card página inicial */
+
+    .ContainerCard {
+        flex-wrap: wrap;
+        width: 95vw;
+    }
+
+    .ContainerInfo {
+        width: 90vw;
+    }
+
+    .TituloCardPaginaInicial{
+        font-size: 40px;
+    }
+
+    .ParagrafoCardPaginaInicial {
+        width: 90vw;
+    }
+
+    .ImagemCardPaginaInicial {
+        all: unset;
+        margin: 15px auto;
+        width: 90vw; /* Garante que a imagem não ultrapasse o container */
+    }
+    .LinhaSeparadora{
+        width: 95vw;
+    }
+    
+    .reverse{
+        flex-direction: row;
+    }
 }
