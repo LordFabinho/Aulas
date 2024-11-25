@@ -6,6 +6,29 @@ body {
 }
 
 header {
+    position: relative; /* Torna o header o contexto do pseudo-elemento */
+    background-image: url(https://cdn.pixabay.com/photo/2022/08/24/15/42/library-7408106_1280.jpg);
+    background-position: center;
+    background-size: cover; /* Faz a imagem cobrir o espaço */
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 0; /* Para garantir que o conteúdo fique acima */
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45); /* Cor preta com 50% de opacidade */
+    z-index: -1; /* Garante que a sobreposição fique atrás do conteúdo */
+}
+
+
+nav {
     background-color: hsl(358, 81%, 50%);
     height: 60px;
     display: flex; 
@@ -28,14 +51,16 @@ footer {
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 h1, h2, h3{
     all: unset;
     font-family: "Rubik", sans-serif;
-    font-weight: 500;
-    font-style: bold;
 }
 
 h1 {
+    margin: auto;
+    text-align: center;
+    align-items: center;
     font-weight: 700;
     font-size: 65px;
     color: #fcf5e4;
