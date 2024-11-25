@@ -10,7 +10,6 @@ header {
     height: 60px;
     display: flex; 
     justify-content: space-between;
-    position: relative;
 }
 
 main {
@@ -33,26 +32,29 @@ h1, h2, h3{
     all: unset;
     font-family: "Rubik", sans-serif;
     font-weight: 500;
-    font-style: normal;
+    font-style: bold;
 }
 
 h1 {
+    font-weight: 700;
     font-size: 65px;
-    color: aqua;
+    color: #fcf5e4;
 }
 
 h2 {
+    font-weight: 600;
     margin: 10px auto 10px auto;
     font-size: 55px;
     opacity: 0.95;
-    color: aqua;
+    color: #ffc02b;
 }
 
 h3 {
     margin: 10px auto 50px auto;
+    font-weight: 500;
     font-size: 35px;
-    opacity: 0.70;
-    color: aqua;
+    color: rgb(253, 26, 26);
+    /* color: #f8572d; Laranja*/ 
 }
 
 p {
