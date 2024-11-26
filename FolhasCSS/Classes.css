@@ -104,6 +104,11 @@
 }
 
 /* Tags card página inicial */
+.TituloIndex{
+    margin-bottom: 20px; 
+    font-size: 80px;
+}
+
 .Container{
     width: auto;
     height: auto;
@@ -382,7 +387,21 @@
 
 @media screen and (max-width: 500px) {
     /* Tags card página inicial */
+    .Container{
+        width: 95vw;
+    }
 
+    .TituloIndex{
+        margin-bottom: 20px; 
+        font-size: 41px;
+    }
+
+    .TituloCardPaginaInicial{
+        font-weight: 800;
+        margin: 10px auto 10px auto;
+        font-size: 55px;
+        color: #ffc02b;
+    }
     .ContainerCard {
         flex-wrap: wrap;
         width: 95vw;
