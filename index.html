@@ -1,214 +1,240 @@
-/* Estilizações para tags */
+<!DOCTYPE html>
+<html lang="pt-br">
 
-body {
-    background-color: rgba(0, 0, 0, 0.863);
-    /*Grafite: rgba(0, 0, 0, 0.155)*/
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemática Básica</title>
+    <link rel="shortcut icon" href="imagens/logoDR_4.ico" type="image/x-icon">
+    <link rel="stylesheet" href="FolhasCSS/Classes.css">
+    <link rel="stylesheet" href="FolhasCSS/Tags.css">
+    <link rel="stylesheet" href="FolhasCSS/Ids.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
 
-header {
-    position: relative; /* Torna o header o contexto do pseudo-elemento */
-    background-image: url(https://cdn.pixabay.com/photo/2022/08/24/15/42/library-7408106_1280.jpg);
-    background-position: center;
-    background-size: cover; /* Faz a imagem cobrir o espaço */
-    height: 300px;
-    display: flex;
-    justify-content: space-between;
-    z-index: 0; /* Para garantir que o conteúdo fique acima */
-}
-
-header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.45); /* Cor preta com 50% de opacidade */
-    z-index: -1; /* Garante que a sobreposição fique atrás do conteúdo */
-}
-
-
-nav {
-    background-color: hsl(358, 81%, 50%);
-    height: 60px;
-    display: flex; 
-    justify-content: space-between;
-}
-
-main {
-    margin: auto;
-    display: block; 
-    max-width: 933px; /* Mexer quando os novos cards estiverem prontos */
-    text-align: left; /* Alinha textos e conteúdo inline à direita */
-}
-
-footer {
-    margin: auto;
-    display: block; 
-    max-width: 933px; /* Mexer quando os novos cards estiverem prontos */
-    text-align: left; /* Alinha textos e conteúdo inline à direita */
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
-h1, h2, h3{
-    all: unset;
-    font-family: "Rubik", sans-serif;
-}
-
-h1 {
-    margin: auto;
-    text-align: center;
-    align-items: center;
-    font-weight: 700;
-    font-size: 65px;
-    color: #fcf5e4;
-}
-
-h2 {
-    font-weight: 600;
-    margin: 10px auto 10px auto;
-    font-size: 55px;
-    opacity: 0.95;
-    color: #ffc02b;
-}
-
-h3 {
-    margin: 10px auto 50px auto;
-    font-weight: 500;
-    font-size: 35px;
-    color: rgb(253, 26, 26);
-    /* color: #f8572d; Laranja*/ 
-}
-
-p {
-    line-height: 150%;
-    font-size: 21px;
-    color: white;
-    opacity: 0.86;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-}
-
-strong{
-    color: white;
-}
-
-ul{
-    font-family: "Inter", sans-serif;
-    margin: 20px auto 10px auto;
-}
-
-li{
-    margin-bottom: 10px;
-    margin-left: 20px;
-    font-size: 21px;
-    line-height: 150%;
-    color: white;
-    opacity: 0.86;
-}
-
-table {
-    width: 100%;
-    align-items: center;
-    border-collapse: collapse; /* Combina as bordas das células da tabela */
-}
-
-th, td {
-    border: 1px solid #ffffffa9;
-    padding: 7px;
-    background-color: #ddd;
-    color: #000;
-}
-
-th {
-    background-color: #333;
-    color: rgba(255, 255, 255, 0.824);
-}
-
-img{
-    width: 100%;
-}
-
-abbr {
-    object-fit: contain;
-    word-spacing: 1px;
-    font-size: 18px;
-    margin-left: 1vh;
-    margin-right: 1vh;
-    color: white;
-    opacity: 0.86;
-    max-width: 1170px;
-}
-
-article {
-    object-fit: contain;
-    word-spacing: 1px;
-    font-size: 18px;
-    margin-left: 1vh;
-    margin-right: 1vh;
-    color: white;
-    opacity: 0.86;
-    max-width: 1170px;
-}
-
-canvas {
-    border: 1px solid black;
-}
-
-a {
-    font-size: 25px;
-    text-decoration: none;
-    color: white;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-}
-
-code {
-    word-spacing: 2px;
-    font-size: 18px;
-    margin: 0;
-    padding: 0;
-    color: aqua;
-    opacity: 0.65;
-}
-
-@media screen and (max-width: 500px) {
-    main, footer {
-        max-width: 95vw; 
-    }
-
-    h1 {
-        font-size: 45px;
-    }
-
-    h2 {
-        font-size: 40px;
-    }
-
-    h3 {
-        font-size: 35px;
-    }
+<body> 
+    <header>
+        <div class="Container">
+            <div style="margin: 5px auto; height: 10px;" class="LinhaSeparadora"></div>
+            <h1 class="TituloIndex">Material de Estudos Matemática</h1>
+            <div style="margin: 5px auto; height: 10px;" class="LinhaSeparadora"></div>
+        </div>
+    </header> 
+     
     
-    p{
-        font-size: 20px;
-        text-align: justify;
-    }
+    <main>
 
-    img{
-        max-width: 95vw;
-    }
+        <!-- Banco de imagens grátis https://pixabay.com/pt/images/search/matem%C3%A1tica/-->
+        <!-- Banco de imagens grátis https://www.istockphoto.com/br/search/more-like-this/613683310?assettype=image-->
 
-    table {
-        max-width: 90vw;
-    }
+        <p>Olá, seja bem vindo(a) a trilha de matemática básica. Essa trilha foi preparada para quem ainda não é apto com a matéria e vai iniciar os estudos nela. Para ser redirecionado para os conteúdos, basta você clicar na descrição depois do tópico principal. Bons estudos :)</p>
 
-    th{ 
-        align-items: center;
-        padding: 3px;
-        font-size: 9px;
-    }
-}
+        <main>
+            <!-- <div class="ContainerCard reverse"> 
+                <img class="ImagemCardPaginaInicial" src="https://cdn.pixabay.com/photo/2016/11/29/01/16/abacus-1866497_1280.jpg">
+                <div class="ContainerInfo">    
+                    <h2 class="TituloCardPaginaInicial">Nome Assunto</h2>
+                    <p class="ParagrafoCardPaginaInicial">Tópicos a serem abordado no asssunto</p>
+                        <a class="BotaoCardPaginaInicial" href="">Botao</a>
+                        <a class="BotaoCardPaginaInicial" href="">Botao</a>
+                </div>
+            </div> -->
+            <div class="LinhaSeparadora"></div>
+            <div class="ContainerCard"> 
+                <img class="ImagemCardPaginaInicial" src="https://cdn.pixabay.com/photo/2016/11/29/01/16/abacus-1866497_1280.jpg">
+                <div class="ContainerInfo">    
+                    <h2 class="TituloCardPaginaInicial">Sistema Numérico Decimal</h2>
+                    <p class="ParagrafoCardPaginaInicial">Começaremos a construir as bases da aritmética entendendo melhor seu funcionamento. Esta seção aborda os fundamentos do sistema numérico decimal: Símbolos, Números, Sistemas Numéricos, Algarismos Decimais, Classes Numéricas, Outros Sistemas e algorítmo de conversão entre bases.</p>
+                    <a class="BotaoCardPaginaInicial" href="conteudos/sistema_numerico_decimal.html">Acessar Conteúdo</a>
+                </div>
+            </div>
+            <div class="LinhaSeparadora"></div>
+            
+            <div class="ContainerCard reverse"> 
+                <img class="ImagemCardPaginaInicial" src="https://cdn.pixabay.com/photo/2021/10/05/21/46/math-6683827_640.png">
+                <div class="ContainerInfo">    
+                    <h2 class="TituloCardPaginaInicial">As 4 Operações Básicas</h2>
+                    <p class="ParagrafoCardPaginaInicial">Este tópico explora as operações fundamentais da matemática: adição, subtração, multiplicação e divisão.</p>
+                    <a class="BotaoCardPaginaInicial" href="conteudos/as_4_operacoes_basicas.html">Acessar Conteúdo</a>
+                </div>
+            </div>
+            <div class="LinhaSeparadora"></div>
+            
+            <div class="ContainerCard"> 
+                <img class="ImagemCardPaginaInicial" src="https://cdn.pixabay.com/photo/2015/09/12/09/05/mathematics-936745_1280.jpg">
+                <div class="ContainerInfo">    
+                    <h2 class="TituloCardPaginaInicial">Potenciação e Radiciação</h2>
+                    <p class="ParagrafoCardPaginaInicial">Este tópico trata dos conceitos de potenciação e radiciação, incluindo suas propriedades e aplicações.</p>
+                    <a class="BotaoCardPaginaInicial" href="conteudos/potenciacao.html">Acessar Conteúdo</a>
+                </div>
+            </div>
+            <div class="LinhaSeparadora"></div>
+            
+            <div class="ContainerCard reverse"> 
+                <img class="ImagemCardPaginaInicial" src="https://cdn.pixabay.com/photo/2018/09/22/11/34/board-3695072_1280.jpg">
+                <div class="ContainerInfo">    
+                    <h2 class="TituloCardPaginaInicial">Frações</h2>
+                    <p class="ParagrafoCardPaginaInicial">Este tópico explora o conceito de frações, significado dos termos das frações, leitura, tipos operações básicas.</p>
+                    <a class="BotaoCardPaginaInicial" href="conteudos/fracoes.html">Acessar Conteúdo</a>
+                </div>
+            </div>
+            <div class="LinhaSeparadora"></div>
+            
+            <div class="ContainerCard"> 
+                <img class="ImagemCardPaginaInicial" src="https://cdn.pixabay.com/photo/2014/01/29/09/35/mathematics-254171_1280.jpg">
+                <div class="ContainerInfo">
+                    <h2 class="TituloCardPaginaInicial">Múltiplos e Divisores</h2>
+                    <p class="ParagrafoCardPaginaInicial">Este tópico aborda os conceitos de múltiplos e divisores, propriedades e números primos.</p>
+                    <a class="BotaoCardPaginaInicial" href="conteudos/multiplos_e_divisores.html">Acessar Conteúdo</a>
+                </div>
+            </div>
+            <div class="LinhaSeparadora"></div>
+            
+            <div class="ContainerCard reverse"> 
+                <img class="ImagemCardPaginaInicial" src="https://cdn.pixabay.com/photo/2021/08/19/17/18/numbers-6558560_1280.jpg">
+                <div class="ContainerInfo">    
+                    <h2 class="TituloCardPaginaInicial">Critérios de Divisibilidade</h2>
+                    <p class="ParagrafoCardPaginaInicial">Este tópico explora os critérios de divisibilidade que ajudam a determinar se um número é divisível por outro sem realizar a divisão diretamente.</p>
+                    <a class="BotaoCardPaginaInicial" href="conteudos/criterios_de_divisibilidade.html">Acessar Conteúdo</a>
+                </div>
+            </div>
+            <div class="LinhaSeparadora"></div>
+            <div class="ContainerCard"> 
+                <img style="background-color: azure;" class="ImagemCardPaginaInicial" src="https://cdn.pixabay.com/photo/2021/07/27/16/57/cat-6497416_1280.png">
+                <div class="ContainerInfo">    
+                    <h2 class="TituloCardPaginaInicial">Expressões Numéricas</h2>
+                    <p class="ParagrafoCardPaginaInicial">Este tópico aborda as expressões numéricas, ordem das operações, uso dos símbolos e passo a passo sobre como resolvê-las.</p>
+                    <a class="BotaoCardPaginaInicial" href="conteudos/expressoes_numericas.html">Acessar Conteúdo</a>
+                </div>
+            </div>
+            <div class="LinhaSeparadora"></div>
+            
+            <div class="ContainerCard reverse"> 
+                <img class="ImagemCardPaginaInicial" src="https://storage.googleapis.com/novo-blog-wordpress/2024/08/24e60afc-mmc-escrito-em-giz-em-lousa-verde.jpg">
+                <div class="ContainerInfo">    
+                    <h2 class="TituloCardPaginaInicial">MMC e MDC</h2>
+                    <p class="ParagrafoCardPaginaInicial">Este tópico trata do Mínimo Múltiplo Comum (MMC) e do Máximo Divisor Comum (MDC), incluindo métodos para calcular esses valores.</p>
+                    <a class="BotaoCardPaginaInicial" href="conteudos/mmc_e_mdc.html">Acessar Conteúdo</a>
+                </div>
+            </div>
+            <div class="LinhaSeparadora"></div>
+            
+            <div class="ContainerCard"> 
+                <img class="ImagemCardPaginaInicial" src="https://cdn.pixabay.com/photo/2016/07/06/15/29/math-1500720_1280.jpg">
+                <div class="ContainerInfo">    
+                    <h2 class="TituloCardPaginaInicial">Conjuntos Numéricos</h2>
+                    <p class="ParagrafoCardPaginaInicial">Este tópico explora os diferentes conjuntos numéricos, incluindo números naturais, inteiros, racionais e irracionais.</p>
+                    <a class="BotaoCardPaginaInicial" href="conteudos/conjuntos_numericos.html">Acessar Conteúdo</a>
+                </div>
+            </div>
+            <div class="LinhaSeparadora"></div>
+            
+            <div class="ContainerCard reverse"> 
+                <img class="ImagemCardPaginaInicial" src="https://cdn.pixabay.com/photo/2016/03/22/00/51/pythagoras-1271942_1280.jpg">
+                <div class="ContainerInfo">    
+                    <h2 class="TituloCardPaginaInicial">Produtos Notáveis</h2>
+                    <p class="ParagrafoCardPaginaInicial">Este tópico aborda os produtos notáveis, como quadrado da soma, quadrado da diferença, produto da soma pela diferença, entre outros.</p>
+                    <a class="BotaoCardPaginaInicial" href="conteudos/produtos_notaveis.html">Acessar Conteúdo</a>
+                </div>
+            </div>
+            <div class="LinhaSeparadora"></div>
+            <div class="ContainerCard">
+                <img style="background-color: whitesmoke;" class="ImagemCardPaginaInicial" src="https://clickestudante.com/wp-content/uploads/2018/12/63913.jpg">
+                <div class="ContainerInfo">    
+                    <h2 class="TituloCardPaginaInicial">Fatoração de Expressões Algébricas</h2>
+                    <p class="ParagrafoCardPaginaInicial">Este tópico trata de técnicas para fatorar expressões algébricas em polinômios.</p>
+                    <a class="BotaoCardPaginaInicial" href="conteudos/fatoracao_de_expressoes_algebricas.html">Acessar Conteúdo</a>
+                </div>
+            </div>
+            <div class="LinhaSeparadora"></div>
+            
+            <div class="ContainerCard reverse"> 
+                <img style="background-color: white;" class="ImagemCardPaginaInicial" src="https://cdn.pixabay.com/photo/2013/07/12/14/53/parabola-148973_1280.png">
+                <div class="ContainerInfo">    
+                    <h2 class="TituloCardPaginaInicial">Equação do Primeiro e Segundo Grau</h2>
+                    <p class="ParagrafoCardPaginaInicial">Este tópico aborda equações do primeiro e segundo grau, incluindo métodos para resolver e aplicar essas equações em problemas do mundo real.</p>
+                    <a class="BotaoCardPaginaInicial" href="conteudos/equacao_do_primeiro_e_segundo_grau.html">Acessar Conteúdo</a>
+                </div>
+            </div>
+            <div class="LinhaSeparadora"></div>
+            
+            <div class="ContainerCard"> 
+                <img class="ImagemCardPaginaInicial" src="https://s4.static.brasilescola.uol.com.br/be/2020/10/exponencial-drecrescente.jpg">
+                <div class="ContainerInfo">    
+                    <h2 class="TituloCardPaginaInicial">Equação Exponencial</h2>
+                    <p class="ParagrafoCardPaginaInicial">Este tópico explora equações exponenciais e seus princípios básicos, incluindo propriedades de potência e solução de equações exponenciais.</p>
+                    <a class="BotaoCardPaginaInicial" href="conteudos/equacao_exponencial.html">Acessar Conteúdo</a>
+                </div>
+            </div>
+            <div class="LinhaSeparadora"></div>
+            
+            <div class="ContainerCard reverse"> 
+                <img class="ImagemCardPaginaInicial" src="https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <div class="ContainerInfo">    
+                    <h2 class="TituloCardPaginaInicial">Sistema de Equações</h2>
+                    <p class="ParagrafoCardPaginaInicial">Este tópico trata de sistemas de equações lineares, incluindo métodos de resolução como substituição, eliminação e matriz inversa.</p>
+                    <a class="BotaoCardPaginaInicial" href="conteudos/sistema_de_equacoes.html">Acessar Conteúdo</a>
+                </div>
+            </div>
+            <div class="LinhaSeparadora"></div>
+            
+            <div class="ContainerCard"> 
+                <img class="ImagemCardPaginaInicial" src="https://cdn.pixabay.com/photo/2016/04/01/09/21/college-1299312_1280.png">
+                <div class="ContainerInfo">    
+                    <h2 class="TituloCardPaginaInicial">Unidades de Medida</h2>
+                    <p class="ParagrafoCardPaginaInicial">Este tópico explora unidades de medida para comprimento, área, volume, massa, tempo e outras grandezas, bem como conversões entre diferentes unidades.</p>
+                    <a class="BotaoCardPaginaInicial" href="conteudos/unidades_de_medida.html">Acessar Conteúdo</a>
+                </div>
+            </div>
+            <div class="LinhaSeparadora"></div>
+            
+            <div class="ContainerCard reverse"> 
+                <img class="ImagemCardPaginaInicial" src="https://cdn.pixabay.com/photo/2020/06/01/18/47/math-5247958_1280.jpg">
+                <div class="ContainerInfo">    
+                    <h2 class="TituloCardPaginaInicial">Notação Científica</h2>
+                    <p class="ParagrafoCardPaginaInicial">Este tópico aborda a notação científica, uma forma de escrever números muito grandes ou muito pequenos de maneira concisa.</p>
+                    <a class="BotaoCardPaginaInicial" href="conteudos/notacao_cientifica.html">Acessar Conteúdo</a>
+                </div>
+            </div>
+            <div class="LinhaSeparadora"></div>
+            
+            <div class="ContainerCard"> 
+                <img class="ImagemCardPaginaInicial" src="https://cdn.pixabay.com/photo/2017/09/15/20/00/sacred-geometry-2753428_960_720.jpg">
+                <div class="ContainerInfo">    
+                    <h2 class="TituloCardPaginaInicial">Áreas das Figuras Planas</h2>
+                    <p class="ParagrafoCardPaginaInicial">Este tópico trata do cálculo da área de figuras planas, como triângulos, quadriláteros, círculos e outras formas geométricas.</p>
+                    <a class="BotaoCardPaginaInicial" href="conteudos/areas_das_figuras_planas.html">Acessar Conteúdo</a>
+                </div>
+            </div>
+            <div class="LinhaSeparadora"></div>
+            
+            <div class="ContainerCard reverse"> 
+                <img class="ImagemCardPaginaInicial" src="https://cdn.pixabay.com/photo/2021/02/02/07/40/geometry-5973004_1280.png">
+                <div class="ContainerInfo">    
+                    <h2 class="TituloCardPaginaInicial">Trigonometria no Triângulo Retângulo</h1>
+                    <p class="ParagrafoCardPaginaInicial">Este tópico explora a aplicação da trigonometria no contexto de triângulos retângulos, incluindo relações entre os lados e ângulos desses triângulos.</p>
+                    <a class="BotaoCardPaginaInicial" href="conteudos/trigonometria_no_triangulo_retangulo.html">Acessar Conteúdo</a>
+                </div>
+            </div>
+            <div class="LinhaSeparadora"></div>
+            
+            <div class="ContainerCard"> 
+                <img class="ImagemCardPaginaInicial" src="https://cdn.pixabay.com/photo/2016/11/23/14/37/blur-1853262_1280.jpg">
+                <div class="ContainerInfo">    
+                    <h2 class="TituloCardPaginaInicial">Interpretação de Gráficos</h2>
+                    <p class="ParagrafoCardPaginaInicial">Este tópico trata da interpretação de gráficos e diagramas, incluindo gráficos de barras, de linhas, de pizza e outros tipos de representações visuais de dados.</p>
+                    <a class="BotaoCardPaginaInicial" href="conteudos/interpretacao_de_graficos.html">Acessar Conteúdo</a>
+                </div>
+            </div>
+            <div class="LinhaSeparadora"></div>            
+        </main>
+    
+</body>
+
+</html>
