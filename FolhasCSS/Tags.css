@@ -177,8 +177,8 @@ code {
 }
 
 @media screen and (max-width: 500px) {
-    main {
-        max-width: 95vw; /* Mexer quando os novos cards estiverem prontos */
+    main, footer {
+        max-width: 95vw; 
     }
 
     h1 {
