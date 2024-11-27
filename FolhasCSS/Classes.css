@@ -113,6 +113,7 @@
     width: auto;
     height: auto;
     margin: auto;
+    text-align: center;
 }
 
 .ContainerCard {
@@ -138,7 +139,7 @@
 }
 
 .TituloCardPaginaInicial{
-    color: red;
+    color: rgb(255, 53, 53);
     font-size: 50px;
     margin: 5px auto;
 }
@@ -175,49 +176,51 @@
     background-color: red;
     margin: 50px auto;
     width: 100%;
-    height: 2px;
+    height: 3px;
 }
 
 .reverse{
     flex-direction: row-reverse;
 }
-/* Encerra os Cards */
 
-.espacamento {
-    word-spacing: 2px;
-    font-size: 18px;
-    margin: 3%;
-    color: white;
-    opacity: 0.86;
+/* Classes para as Questões */
+
+.ContainerQuestao{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
 }
 
-.alternativa {
-    display: inline-flex;
+.ContainerAlternativas{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+.Alternativa {
+    all: unset;
     align-items: center;
-    justify-content: center;
     background-color: #2cb52f;
     text-decoration: none;
     color: white;
     font-size: 20px;
     padding: 10px;
-    margin: 0 2%;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.1s;
 }
 
-.alternativa:hover {
+.Alternativa:hover {
     background-color: #1e7b2d;
 }
 
-.menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
-}
-
+/* Estilos para botões de menu -------------------------------------------------------------------------------------------------------------- */
 .botao_menu {
     display: flex;
     align-items: center;
@@ -237,152 +240,9 @@
 
 .botao_menu:hover {
     transform: scale(1.10);
-    margin: 10px;
+    margin:10px;
     background-color: #2cb52f;
     opacity: 1;
-}
-
-.alinhar_com_paragrafo {
-    margin: 2%;
-    align-items: center;
-}
-
-.code {
-    word-spacing: 2px;
-    font-size: 18px;
-    margin: 0;
-    padding: 0;
-    color: aqua;
-    opacity: 0.65;
-}
-
-.code_2 {
-    word-spacing: 2px;
-    font-size: 18px;
-    margin: 0;
-    padding: 0;
-    color: #2cb52f;
-}
-
-.tabela {
-    display: flex;
-    flex-direction: column;
-    height: 50vh;
-}
-
-.linha {
-    display: flex;
-    height: 100%;
-}
-
-.coluna {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
-    box-sizing: border-box;
-}
-
-.escurecer {
-    background-color: rgba(0, 0, 0, 0.9);
-    top: 0;
-    left: 0;
-    width: 100%;
-    word-spacing: 2px;
-    color: white;
-    padding: 1%;
-}
-
-.centralizar {
-    background-color: rgba(0, 0, 0, 0.9);
-    align-items: center;
-    justify-content: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    word-spacing: 2px;
-    color: white;
-    padding: 1%;
-}
-
-.centralizar_imagem {
-    display: block;
-    margin: auto;
-    max-width: 500px;
-    object-fit: contain;
-}
-
-.questao {
-    align-items: center;
-    display: block;
-    margin: 2% 10%;
-}
-
-.conjunto_flashcards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
-    max-width: 1200px;
-    margin: auto;
-}
-
-.book {
-    position: relative;
-    border-radius: 10px;
-    width: 220px;
-    height: 300px;
-    background-color: whitesmoke;
-    -webkit-box-shadow: 1px 1px 12px #000;
-    box-shadow: 1px 1px 12px #000;
-    -webkit-transform: preserve-3d;
-    transform: preserve-3d;
-    -webkit-perspective: 2000px;
-    perspective: 2000px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #000;
-}
-
-.cover {
-    top: 0;
-    position: absolute;
-    background-color: lightgray;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    cursor: pointer;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-    -webkit-transform-origin: 0;
-    transform-origin: 0;
-    box-shadow: 1px 1px 12px #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.book:hover .cover {
-    transition: all 0.5s;
-    transform: rotatey(-80deg);
-}
-
-.paragrafo_card {
-    text-align: center;
-    font-size: 25px;
-    font-weight: bolder;
-    color: #000;
-}
-
-.descricao_card {
-    text-align: right;
-    font-size: 18px;
-    color: #000;
-    position: absolute;
-    left: 40px;
-    right: 6px;
-    font-weight: bolder;
 }
 
 @media screen and (max-width: 500px) {
