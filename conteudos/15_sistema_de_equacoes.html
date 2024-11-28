@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conjuntos Numéricos</title>
+    <link rel="stylesheet" href="../FolhasCSS/Classes.css">
+    <link rel="stylesheet" href="../FolhasCSS/Tags.css">
+    <link rel="stylesheet" href="../FolhasCSS/Animacoes.css">
+    <link rel="stylesheet" href="../FolhasCSS/Ids.css">
+    <script async src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .logo {
+            width: 60px;
+            height: 60px;
+            margin: 0;
+        }
+        .logo:hover {
+            scale: 1.1;
+            margin-left: 5px;
+        }
+        .botao_navegacao {
+            display: block;
+            position: relative;
+            width: 60px;
+            height: 60px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        .barra {
+            display: block;
+            height: 8px;
+            width: 50px;
+            background-color: rgb(0, 0, 0);
+            margin: 4px auto;
+        }
+        .menu_lateral {
+            display: none;
+            height: 100%;
+            width: auto;
+            background-color: hsl(358, 81%, 50%);
+            flex-direction: column;
+            transition: transform 0.3s;
+        }
+        .menu_lateral.visivel {
+            display: flex; /* Torna visível */
+            transform: translateX(0); /* Garante a posição correta */
+        }
+        .menu_lateral.oculto {
+            transform: translateX(100%); /* Esconde o menu lateral */
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function BarraLateral() {
+            const barraLateral = document.getElementsByClassName("menu_lateral")[0]; // Obtém o primeiro elemento com essa classe
+            if (barraLateral) {
+                // Exibe a barra lateral removendo "oculto" e adicionando "visivel"
+                // Essa função tem a lógica de acicionar como se fosse subpropiedades dentro da classe css exixtente. 
+                barraLateral.classList.remove("oculto");
+                barraLateral.classList.add("visivel");
+            }
+        }
+        
+        function Gambiarra() {
+            const barraLateral = document.getElementsByClassName("menu_lateral")[0]; // Obtém o primeiro elemento com essa classe
+            if (barraLateral) {
+                // Oculta a barra lateral removendo "visivel" e adicionando "oculto"
+                barraLateral.classList.remove("visivel");
+                barraLateral.classList.add("oculto");
+            }
+        }
+    </script>
+
+    <header>
+        <img class="logo" src="../imagens/logoDR_1.png">
+        <br>
+        <button onclick="BarraLateral()" class="botao_navegacao"> 
+            <div class="barra"></div>
+            <div class="barra"></div>
+            <div class="barra"></div>
+        </button>
+        <div class="menu_lateral">
+            <a class="botao_redirecionador" href="">Professores</a>
+            <a class="botao_redirecionador" href="">Matérias</a>
+            <a class="botao_redirecionador" href="">Sobre Nós</a>
+        </div>
+    </header>   
+    <main onclick="Gambiarra()">
+        Clique fora para fechar a barra lateral
+        Clique fora para fechar a barra lateral
+        Clique fora para fechar a barra lateral
+        Clique fora para fechar a barra lateral
+        Clique fora para fechar a barra lateral
+        Clique fora para fechar a barra lateral
+        Clique fora para fechar a barra lateral
+        Clique fora para fechar a barra lateral
+        Clique fora para fechar a barra lateral
+        Clique fora para fechar a barra lateral
+        Clique fora para fechar a barra lateral
+        Clique fora para fechar a barra lateral
+        Clique fora para fechar a barra lateral
+        Clique fora para fechar a barra lateral
+        Clique fora para fechar a barra lateral
+        Clique fora para fechar a barra lateral
+        Clique fora para fechar a barra lateral
+        Clique fora para fechar a barra lateral
+    </main>
+</body>
+</html>
